@@ -1,0 +1,62 @@
+
+html,
+body {
+	height: 100%;
+	color: $black;
+	background-color: #fff;
+  box-sizing: border-box;
+}
+body.lock {
+  overflow: hidden;
+}
+.wrapper {
+	display: flex;
+	width: 100%;
+	min-height: 100%;
+	flex-direction: column;
+  padding-top: 100px;
+  overflow-x: hidden !important;
+  position: relative;
+}
+.container {
+	display: flex;
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.btn {
+  padding: 12px 42px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: #fff;
+  background: $marine;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 2px 2px 15px rgba($color: $light-marine, $alpha: 0.7),
+      -2px -2px 15px rgba($color: $light-marine, $alpha: 0.7);
+    text-shadow: 3px 3px 15px rgba($color: #fff, $alpha: 0.5),
+      -3px -3px 15px rgba($color: #fff, $alpha: 0.5);
+    border: none;
+  }
+
+  &:active {
+    box-shadow: 1px 1px 5px rgba($color: #000, $alpha: 0.3),
+      -1px -1px 5px rgba($color: #000, $alpha: 0.3);
+    transform: scale(0.95);
+  }
+}
+
+
+
+
+
+
+
+
