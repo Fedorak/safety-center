@@ -12,11 +12,14 @@ body.lock {
 .wrapper {
 	display: flex;
 	width: 100%;
+  max-width: 1440px;
 	min-height: 100%;
-	flex-direction: column;
+	flex-direction: row;
   padding-top: 100px;
   overflow-x: hidden !important;
   position: relative;
+  margin: 0 auto;
+  padding-left:30px;
 }
 .container {
 	display: flex;
@@ -32,15 +35,15 @@ body.lock {
   font-weight: 500;
   line-height: 1.17;
   color: #fff;
-  background: $marine;
+  background: #b89b49;
   border: none;
-  border-radius: 12px;
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
-    box-shadow: 2px 2px 15px rgba($color: $light-marine, $alpha: 0.7),
-      -2px -2px 15px rgba($color: $light-marine, $alpha: 0.7);
+    box-shadow: 2px 2px 15px rgba($color: #b89b497e, $alpha: 0.7),
+      -2px -2px 15px rgba($color: #b89b4985, $alpha: 0.7);
     text-shadow: 3px 3px 15px rgba($color: #fff, $alpha: 0.5),
       -3px -3px 15px rgba($color: #fff, $alpha: 0.5);
     border: none;

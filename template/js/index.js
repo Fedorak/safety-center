@@ -53,6 +53,30 @@ if (isMobile.any()) {
   body.classList.add('mouse')
 }
 
+// ===== HERO CAROUSEL =====
+
+$(document).ready(function(){
+  $(".hero-slider").owlCarousel( {
+    items: 1,
+    margin: 0,
+    nav: false,
+    dots: false,
+    dotsEach: true,
+    autoplay: {
+       delay: 1200,
+       stopOnLastSlide: false,
+       disableOnInteraction: false
+    },
+    autoplayHoverPause: true,
+    slideBy: 1,
+    freeMode: true,
+     autoplaySpeed: 800,
+    dragEndSpeed: true,
+    slideTransition: 'ease-out',
+    loop: true
+  });
+});
+
 
 // ===== HITS CAROUSEL =====
 
@@ -61,7 +85,6 @@ $(document).ready(function(){
     items: 5,
     margin: 5,
     nav: true,
-    navText: ["❮", "❯"],
     dots: true,
     dotsEach: true,
     // autoplay: {
@@ -101,7 +124,6 @@ $(document).ready(function(){
     items: 5,
     margin: 5,
     nav: true,
-    navText: ["❮", "❯"],
     dots: true,
     dotsEach: true,
     autoplay: {
@@ -141,7 +163,6 @@ $(document).ready(function(){
     items: 5,
     margin: 5,
     nav: true,
-    navText: ["❮", "❯"],
     dots: true,
     dotsEach: true,
     autoplay: {
@@ -181,7 +202,6 @@ $(document).ready(function(){
     items: 3,
     margin: 20,
     nav: true,
-    navText: ["❮", "❯"],
     dots: true,
     dotsEach: true,
     centeer: true,
@@ -679,3 +699,31 @@ $('#burger').click(function() {
   $(this).toggleClass('active');
 });
 
+$('.catalog-open-button').click(function() {
+  $('.catalog').addClass('active');
+});
+$('.catalog-close').click(function() {
+  $('.catalog').removeClass('active');
+});
+
+
+
+
+
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}

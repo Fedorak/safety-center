@@ -26,6 +26,7 @@
 .nav {
 	transition: var(--transition);
 	background: var(--c-basic);
+  padding: 14px 20px 13px;
 	width: 100%;
 	@include flexBox(flex, null, space-between, center, null);
 	min-height: 50px;

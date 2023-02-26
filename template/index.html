@@ -31,15 +31,16 @@
 </head>
 <body>
 	<!-- ===== HEADER ===== -->
+	<div class="top-bar"></div>
 	<header class="header lock-padding" id="header">
 			<div class="header__wrapper" id="headerWrapper">
 				<a href="/" class="header__logo icon-logo">
-					<img src="template/img/logo.svg" alt="">
+					<img src="template/img/logo.png" alt="">
 				</a>
 				<div class="header__menu menu burger">
 									<nav class="burger__body">
 										<ul class="burger__list">
-											<li>
+											<!-- <li>
 												<a href="/catalog" class="burger__link catalog-link">Каталог продукції</a>
 												<ul class="sub-burger__list">
 													<li class="sub-burger__item"><a href="/products" class="sub-burger__link">Відеонагляд</a></li>
@@ -50,7 +51,7 @@
 													<li class="sub-burger__item"><a href="/products" class="sub-burger__link">Джерела живлення</a></li>
 													<li class="sub-burger__item"><a href="/products" class="sub-burger__link">Звукове оповіщення</a></li>
 												</ul>
-											</li>
+											</li> -->
 											<li><a href="/about" class="burger__link">Про нас</a></li>
 											<li><a href="/delivery" class="burger__link">Доставка та оплата</a></li>
 											<li><a href="/contacts" class="burger__link">Контакти</a></li>
@@ -58,29 +59,33 @@
 									</nav>
 
 					</div>
+					<div class="catalog-open-button">Каталог</div>
 					<div class="header__actions actions">
 						<div class="icon-menu" id="burger">
 							<span></span>
 						</div>
+
+						<a href="/" class="header__profile-button">
+							<img src="template/img/profile.svg">
+						</a>
 						<a href="#popup" class="header__action icon-basket popup-link" id="icon-basket"><span class="badge">3</span></a>
 						<div class="actions__search-button">
 							<button id="actions__search"><i class="header__action icon-search"></i></button>
 							<div class="actions__search-popup">
-								<div class="actions__search-bg"></div>
+								
 								<div class="actions__search-form">
 									<form action="#">
 										<div class="actions__form">
 											<input type="text" id="search" placeholder="Для пошуку введіть тут...">
-											<label for="actions__search"><i class="fa fa-search"></i></label>
+											<!-- <label for="actions__search"><i class="fa fa-search"></i></label> -->
 										</div>
 									</form>
+									<div class="actions__search-bg"></div>
 								</div>
 							</div>
 						</div>					
 					</div>
 				</div>
-
-
 	</header>
 		<!-- ===== END OF HEADER ===== -->
 	<!-- HTML -->
@@ -98,8 +103,8 @@
 						<li><a href="/about" class="customers__link">Про нас</a></li>
 						<li><a href="/delivery" class="customers__link">Доставка та оплата</a></li>
 						<li><a href="/contacts" class="customers__link">Контакти</a></li>
-						<li><a href="#" class="customers__link">Політика конфіденційності</a></li>
-						<li><a href="#" class="customers__link">Договір публічної оферти</a></li>
+						<li><a href="/privacy" class="customers__link">Політика конфіденційності</a></li>
+						<li><a href="/contract" class="customers__link">Договір публічної оферти</a></li>
 						
 					</ul>
 				</div>
@@ -109,7 +114,7 @@
 						<input type="text" class="contacts__input" placeholder="Ваша електронна пошта" />
 						<button class="contacts__btn btn" type="submit">Відправити</button>
 					</form>
-					<a href="/" class="contacts__logo"><img src="template/img/logo.svg" alt=""></a>
+					<a href="/" class="contacts__logo"><img src="template/img/logo.png" alt=""></a>
 					<ul class="contacts__socials socials">
 						<li><a class="socials__link" target="_blank" href="https://www.facebook.com/profile.php?id=100077255652845"><img src="template/img/facebook-icon.png" alt="facebook icon"></a></li>
 						<!-- <li><a class="socials__link" href="#"><img src="template/img/youtube-icon.png" alt="youtube icon"></a></li> -->
