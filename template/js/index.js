@@ -727,3 +727,9 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+
+/* LOADER */
+window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
