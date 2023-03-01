@@ -26,14 +26,14 @@ interface Form {
 })
 export class SignComponent {
 	formConfig: FormConfig = {
-		title: 'Sign In / Sign Up',
+		title: 'Вхід / Реєстрація',
 		components: [
 			{
 				set: 'ceo@webart.work',
 				module: FormModules.INPUT,
 				type: InputTypes.EMAIL,
-				placeholder: 'fill your email',
-				label: 'E-mail',
+				placeholder: 'пошта',
+				label: 'Пошта',
 				input: 'email',
 				focused: true
 			},
@@ -41,21 +41,21 @@ export class SignComponent {
 				set: 'asdasdasdasd',
 				module: FormModules.INPUT,
 				type: InputTypes.PASSWORD,
-				placeholder: 'fill your password',
-				label: 'Password',
+				placeholder: 'пароль',
+				label: 'Пароль',
 				input: 'password'
 			},
 			{
 				module: FormModules.INPUT,
 				placeholder: 'fill code from email',
 				hidden: true,
-				label: 'Code',
+				label: 'Код',
 				input: 'code'
 			},
 			{
 				module: FormModules.BUTTON,
 				type: ButtonTypes.PRIMARY,
-				label: "Let's go"
+				label: "Вхід"
 			}
 		]
 	};

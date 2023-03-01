@@ -15,7 +15,7 @@ import { CategoryService, Category } from "src/app/core/services/category.servic
 	styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-	columns = ['name', 'description', 'price', 'characteristics', 'category'];
+	columns = ['Назва', 'Категорія', 'Характеристика', 'Описання', 'Ціна'];
 
 
 	@ViewChild('categoryRef', { static: true }) categoryRef: ElementRef;
@@ -28,34 +28,40 @@ export class ProductsComponent implements OnInit {
 			components: [
 				{
 					module: FormModules.INPUT,
-					placeholder: 'name',
-					label: 'Name',
+					placeholder: 'Назва',
+					label: 'Назва',
 					input: 'name',
 					focused: true
 				},
-				{
-					module: FormModules.INPUT,
-					placeholder: 'description',
-					label: 'Description',
-					input: 'description'
-				},
-				{
-					module: FormModules.INPUT,
-					placeholder: 'price',
-					label: 'Price',
-					input: 'price'
-				},
-				{
-					module: FormModules.INPUT,
-					placeholder: 'characteristics',
-					label: 'Characteristics',
-					input: 'characteristics'
-				},
+
 				{   module: FormModules.SELECT,
 					customRef: this.categoryRef,
+					placeholder: 'Категорія',
 					label: 'Category',
 					input: 'category'
 				},
+
+				{
+					module: FormModules.INPUT,
+					placeholder: 'Описання',
+					label: 'Описання',
+					input: 'description'
+				},
+
+				{
+					module: FormModules.INPUT,
+					placeholder: 'Ціна',
+					label: 'Ціна',
+					input: 'price'
+				},
+
+				{
+					module: FormModules.INPUT,
+					placeholder: 'Характеристика',
+					label: 'Характеристика',
+					input: 'characteristics'
+				},
+
 				{
 					module: FormModules.BUTTON,
 					type: ButtonTypes.PRIMARY

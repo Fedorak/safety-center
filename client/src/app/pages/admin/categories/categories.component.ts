@@ -15,21 +15,21 @@ import { ButtonTypes } from 'src/app/modules/button/button.interface';
 export class CategoriesComponent {
 
 	
-	columns = ['name', 'description'];
+	columns = ['Назва', 'Описання'];
 
 	form: FormConfig = {
 		components: [
 			{
 				module: FormModules.INPUT,
-				placeholder: 'fill name',
-				label: 'Name',
+				placeholder: 'Назва',
+				label: 'Назва',
 				input: 'name',
 				focused: true
 			},
 			{
 				module: FormModules.INPUT,
-				placeholder: 'fill description',
-				label: 'Description',
+				placeholder: 'Описання',
+				label: 'Описання',
 				input: 'description'
 			},
 			{
