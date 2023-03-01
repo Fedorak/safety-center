@@ -3,6 +3,8 @@ import { CoreModule } from 'src/app/core';
 import { ProductsComponent } from './products.component';
 import { Routes, RouterModule } from '@angular/router';
 
+
+
 const routes: Routes = [{
 	path: '',
 	component: ProductsComponent

@@ -22,6 +22,29 @@
 					<span class="material-icons">people</span>
 				</a>
 			</li>
+			<li class="nav__li" *ngIf="us.user.is['admin']">
+				<a
+					[routerLinkActiveOptions]="{ exact: true }"
+					routerLinkActive="_activeLink"
+					routerLink="/admin/categories"
+					(click)="show = false"
+					class="nav__a"
+				>
+					<span class="material-icons">dashboard</span>
+				</a>
+			</li>
+
+			<li class="nav__li" *ngIf="us.user.is['admin']">
+				<a
+					[routerLinkActiveOptions]="{ exact: true }"
+					routerLinkActive="_activeLink"
+					routerLink="/admin/products"
+					(click)="show = false"
+					class="nav__a"
+				>
+					<span class="material-icons">note_add</span>
+				</a>
+			</li>
 			<li class="nav__li _burger">
 				<a
 					class="nav__toggle"

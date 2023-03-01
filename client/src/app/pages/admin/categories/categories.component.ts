@@ -13,6 +13,8 @@ import { ButtonTypes } from 'src/app/modules/button/button.interface';
 	styleUrls: ['./categories.component.scss']
 })
 export class CategoriesComponent {
+
+	
 	columns = ['name', 'description'];
 
 	form: FormConfig = {

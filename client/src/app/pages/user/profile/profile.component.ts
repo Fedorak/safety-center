@@ -46,23 +46,22 @@ export class ProfileComponent {
 			{
 				set: this.us.user.name,
 				module: FormModules.INPUT,
-				placeholder: 'fill your name',
-				label: 'Name',
+				placeholder: 'ПІП',
+				label: 'ПІП',
 				input: 'name'
 			},
 			{
 				set: this.us.user.data['phone'],
 				module: FormModules.INPUT,
-				placeholder: 'fill your phone',
-				label: 'Phone',
+				placeholder: 'Телефон',
+				label: 'Телефон',
 				input: 'phone'
 			},
 			{
 				set: this.us.user.data['bio'],
 				module: FormModules.INPUT,
-				type: InputTypes.TEXTAREA,
-				placeholder: 'fill your bio',
-				label: 'Biography',
+				placeholder: 'Адреса',
+				label: 'Адреса',
 				input: 'bio'
 			}
 		]

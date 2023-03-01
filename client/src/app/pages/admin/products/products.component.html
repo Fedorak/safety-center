@@ -3,4 +3,13 @@
 	[columns]="columns"
 	[config]="config"
 	[rows]="rows"
-></wtable>
+	
+>
+<ng-template cell="category" let-element>{{_cs.doc(element.category).name}}</ng-template>
+</wtable>
+<ng-template #categoryRef let-element>
+	<span class="w-forms__title">Category</span>
+	<select class="prod-field category-select" [(ngModel)]="element.component.set" (ngModelChange)="setValue(element.form, 'category', $event)">
+		<option *ngFor="let category of _cs.categorys" [value]="category._id">{{category.name}}</option>
+	</select>
+</ng-template>

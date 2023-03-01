@@ -5,6 +5,8 @@ export interface Product {
 	_id: string;
 	name: string;
 	description: string;
+	price: string;
+	characteristics: string;
 }
 
 @Injectable({
@@ -19,7 +21,9 @@ export class ProductService {
 		return {
 			_id: '',
 			name: '',
-			description: ''
+			description: '',
+			price: '',
+			characteristics: ''
 		}
 	}
 
@@ -36,10 +40,12 @@ export class ProductService {
 		product: Product = this.new(),
 		callback = (created: Product) => {},
 		text = 'product has been created.'
-	) {
+	) {		
 		if (product._id) {
 			this.save(product);
 		} else {
+
+			
 			this.mongo.create('product', product, (created: Product) => {
 				callback(created);
 				this.alert.show({ text });
@@ -73,6 +79,7 @@ export class ProductService {
 		callback = (created: Product) => {},
 		text = 'product has been updated.'
 	): void {
+		
 		this.mongo.update('product', product, () => {
 			if(text) this.alert.show({ text, unique: product });
 		});
