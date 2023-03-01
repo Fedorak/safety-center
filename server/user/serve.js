@@ -20,9 +20,10 @@ module.exports = function(waw) {
 		waw.url(
 			path.join(client, 'index.html'),
 			[
-				'/admin/users',
+				'/admin/categories',
+				'/admin/products',
 				'/profile',
-				'/auth'
+				'/sign'
 			]
 		);
 	} else {
@@ -38,6 +39,69 @@ module.exports = function(waw) {
 	waw.url(
 		path.join(template, 'dist', 'index.html'),
 		'/',
+		seo
+	);
+
+	waw.build(template, 'about');
+
+	waw.url(
+		path.join(template, 'dist', 'about.html'),
+		'/about',
+		seo
+	);
+	waw.build(template, 'catalog');
+
+	waw.url(
+		path.join(template, 'dist', 'catalog.html'),
+		'/catalog',
+		seo
+	);
+
+	waw.build(template, 'contacts');
+
+	waw.url(
+		path.join(template, 'dist', 'contacts.html'),
+		'/contacts',
+		seo
+	);
+
+	waw.build(template, 'contract');
+
+	waw.url(
+		path.join(template, 'dist', 'contract.html'),
+		'/contract',
+		seo
+	);
+
+	waw.build(template, 'delivery');
+
+	waw.url(
+		path.join(template, 'dist', 'delivery.html'),
+		'/delivery',
+		seo
+	);
+
+	waw.build(template, 'privacy');
+
+	waw.url(
+		path.join(template, 'dist', 'privacy.html'),
+		'/privacy',
+		seo
+	);
+
+	waw.build(template, 'product');
+
+	waw.url(
+		path.join(template, 'dist', 'product.html'),
+		'/product',
+		seo
+	);
+
+	waw.build(template, 'products');
+
+	waw.url(
+		path.join(template, 'dist', 'products.html'),
+		'/products',
 		seo
 	);
 };
