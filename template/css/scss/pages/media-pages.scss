@@ -181,7 +181,7 @@
     }
 
     & .sub-burger__link {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.18;
     }
   }
@@ -433,6 +433,7 @@ top: 57px;
     transition: all 0.3s ease;
     color: black;
     text-decoration-color: #ebebeb;
+    font-size: 15px;
 
     &:hover {
       color: rgb(75, 75, 75);
@@ -443,6 +444,7 @@ top: 57px;
 
   &__text {
     color: #585858;
+    font-size: 17px;
   }
 
   &__prices {
@@ -667,6 +669,7 @@ top: 57px;
 
   & .card__link {
     font-weight: 400;
+    
   }
 
   .owl-prev {
@@ -789,7 +792,7 @@ top: 57px;
   &__input {
     padding: 12px 24px;
     width: 65%;
-    height: 52px;
+    height: 43px;
     background: #f4f4f4;
     border: 1px solid #b89b49;
     border-radius: 4px;
@@ -807,7 +810,7 @@ top: 57px;
   }
 
   &__btn {
-    padding: 10px 41px;
+    padding: 7px 41px;
   }
 }
 
@@ -864,8 +867,8 @@ top: 57px;
     max-width: 335px;
 
     & img {
-      height: 55px;
-      width: 55px;
+      height: 40px;
+      width: 40px;
 
       transition: all 0.2s ease-out;
 
