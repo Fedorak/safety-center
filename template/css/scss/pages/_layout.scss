@@ -572,7 +572,7 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
 .filter-container {
   width: 100%;
   min-width: 320px;
-  max-width: 450px;
+  max-width: 300px;
   border: 1px solid #919191;
   border-radius: 6px;
   padding: 30px 20px;
@@ -589,7 +589,7 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
     pointer-events: all;
   }
   .filter-title {
-    font-size: 28px;
+    font-size: 20px;
     border-bottom: 2px solid black;
     width: max-content;
     display: flex;
@@ -675,9 +675,8 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
     border: none;
     padding: 20px 0;
   }
-  .sort-group {
+ 
 
-  }
   span {
     font-size: 18px;
   }
@@ -739,7 +738,7 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
     margin-bottom: 10px;
     height: auto;
     &__link {
-      font-size: 16px;
+      font-size: 15px;
     }
   }
   .card__price.no-price {

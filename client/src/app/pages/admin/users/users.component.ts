@@ -14,54 +14,54 @@ export class UsersComponent {
 	readonly inputTypes = InputTypes;
 
 	formCreate: FormConfig = {
-		title: 'Create New User',
+		title: 'Створити користувача',
 		components: [
 			{
 				module: FormModules.INPUT,
 				type: InputTypes.EMAIL,
-				placeholder: 'fill email',
-				label: 'E-mail',
+				placeholder: 'Ведіть пошту',
+				label: 'Пошта',
 				input: 'email',
 				focused: true
 			},
 			{
 				module: FormModules.INPUT,
-				placeholder: 'fill name',
-				label: 'Name',
+				placeholder: 'Ведіть імя',
+				label: 'Імя',
 				input: 'name'
 			},
 			{
 				module: FormModules.BUTTON,
 				type: ButtonTypes.PRIMARY,
-				label: 'Create'
+				label: 'Створити'
 			}
 		]
 	};
 
 	formUpdate: FormConfig = {
-		title: 'Update User',
+		title: 'Оновити користувача',
 		components: [
 			{
 				module: FormModules.INPUT,
-				placeholder: 'fill name',
-				label: 'Name',
+				placeholder: 'Ведіть імя',
+				label: 'Імя',
 				input: 'name'
 			},
 			{
 				module: FormModules.BUTTON,
 				type: ButtonTypes.PRIMARY,
-				label: 'Update'
+				label: 'Оновити'
 			}
 		]
 	};
 
 	formVerify: FormConfig = {
-		title: 'Are you sure you want to delete this user?',
+		title: 'Ви впевнані що хочити видалити користувача?',
 		components: [
 			{
 				module: FormModules.BUTTON,
 				type: ButtonTypes.PRIMARY,
-				label: 'Yes'
+				label: 'Так'
 			}
 		]
 	};
