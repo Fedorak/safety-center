@@ -48,7 +48,7 @@ html.dark:root {
 	padding-bottom: 70px;
 	max-width: 1210px;
 	height: auto;
-	margin: 0px auto;
+  margin: 20px auto;
 	position: relative;
 	@media screen and (max-width: 599px) {
 		padding-bottom: 80px;
@@ -83,7 +83,7 @@ html.dark:root {
 			background-color: #53a1d6;
 			color: var(--c-bg-secondary);
 		}
-		// search 
+		// search
 		&-search {
 			position: relative;
 			display: flex;
@@ -145,7 +145,7 @@ html.dark:root {
 				}
 			}
 		}
-		
+
 		.table-header__sort {
 			position: relative;
 			cursor: pointer;
@@ -164,7 +164,7 @@ html.dark:root {
 			border-right: 2px solid var(--c-border);
 			border-bottom: 0.5px solid var(--c-border);
 			font-weight: 500;
-			font-size: var(--fs); 
+			font-size: var(--fs);
 			line-height: calc(var(--fs) + 8px);
 			letter-spacing: var(--letter-spacing);
 			text-transform: capitalize;
@@ -222,7 +222,7 @@ html.dark:root {
 				content: attr(data-label);
 				display: inline-block;
 				font-weight: 500;
-				font-size: var(--fs); 
+				font-size: var(--fs);
 				line-height: calc(var(--fs) + 8px);
 				letter-spacing: var(--letter-spacing);
 				text-transform: capitalize;
@@ -299,7 +299,7 @@ html.dark:root {
 				height: 30px;
 				margin-right: 10px;
 				cursor: pointer;
-				
+
 				.chevron {
 					box-sizing: border-box;
 					position: relative;
@@ -472,7 +472,7 @@ html.dark:root {
 				flex-basis: calc(100% - 10px);
 			}
 		}
-		&__span {	
+		&__span {
 			display: block;
 			color: #9f9f9f;
 			font-weight: bold;

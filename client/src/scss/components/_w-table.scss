@@ -1,10 +1,10 @@
 // table
 .w-table-wrap {
     background: var(--c-bg-secondary);
-    box-shadow: var(--c-shadow);
     border-radius: var(--b-radius);
     padding: 20px;
     width: 100%;
+    
 	transition: var(--transition);
     .w-table {
         border-collapse: collapse;
