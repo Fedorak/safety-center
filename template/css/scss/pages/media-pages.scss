@@ -1,5 +1,3 @@
-
-
 @media (min-width: 560px) {
   .actions__form {
     width: 460px;
@@ -11,9 +9,12 @@
     position: fixed;
     z-index: 22;
     background: white;
-    width: 100%;p{
-    margin-top: 25px;
-}
+    width: 100%;
+
+    p {
+      margin-top: 25px;
+    }
+
     max-width: 96%;
     box-shadow: 0 0 40px #b89b49;
     left: 50%;
@@ -205,7 +206,9 @@
   .actions__form input::placeholder {
     color: black;
   }
-  .actions__search-bg:before, .actions__search-bg:after {
+
+  .actions__search-bg:before,
+  .actions__search-bg:after {
     top: 45px;
   }
 }
@@ -258,7 +261,7 @@
 }
 
 @media (max-width: 990px) {
-.catalog {
+  .catalog {
     position: fixed;
     top: 0;
     left: 50%;
@@ -276,17 +279,20 @@
     display: block;
     overflow-y: auto;
     max-height: 90vh;
+
     .catalog-close {
       display: block;
       position: absolute;
-top: 57px;
-    right: 16px;
+      top: 57px;
+      right: 16px;
       width: 30px;
       height: 24px;
       margin-right: 10px;
       z-index: 22;
       cursor: pointer;
-      &:before, &:after {
+
+      &:before,
+      &:after {
         content: "";
         transition: all .3s ease 0s;
         left: 0;
@@ -295,18 +301,27 @@ top: 57px;
         height: 3px;
         background-color: #b89b49;
       }
-      &:before {transform: rotate(-45deg) translate(8px, -6px);}
-      &:after {transform: rotate(45deg) translate(-7px, -8px);}
+
+      &:before {
+        transform: rotate(-45deg) translate(8px, -6px);
+      }
+
+      &:after {
+        transform: rotate(45deg) translate(-7px, -8px);
+      }
     }
 
-}
-.catalog.active {
+  }
+
+  .catalog.active {
     transform: translate(-50%, -12px);
-}
-.wrapper {
-  padding-right: 15px;
-  padding-left: 15px;
-}
+  }
+
+  .wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .hero {
     & .icon-logo {
       color: #fff;
@@ -346,10 +361,12 @@ top: 57px;
   .burger__body .burger__link {
     font-size: 18px;
   }
-  .actions__search-bg:before, .actions__search-bg:after {
+
+  .actions__search-bg:before,
+  .actions__search-bg:after {
     top: 41px;
-    
-}
+
+  }
 }
 
 @media (max-width: 459.98px) {
@@ -483,6 +500,7 @@ top: 57px;
       transform: scale(0.9);
     }
   }
+
   &__basket {
     width: 100%;
     max-width: 40px;
@@ -523,6 +541,56 @@ top: 57px;
   right: 0;
 }
 
+@media screen and (max-width: 420px) {
+
+  .owl-prev {
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 10%;
+    right: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .owl-prev {
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 10%;
+    right: 0;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+
+  .owl-prev {
+    position: absolute;
+    top: 35%;
+    left: 0;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 35%;
+    right: 0;
+  }
+
+}
+
+
 .owl-prev,
 .owl-next {
   font-size: 50px !important;
@@ -534,9 +602,10 @@ top: 57px;
   background-color: rgba($color: #ebebeb, $alpha: 0.8) !important;
   border-radius: 8px;
   border: none;
+
   // opacity: 0.9;
   span {
-  transform: translateY(-4px);
+    transform: translateY(-4px);
     display: block;
   }
 
@@ -556,14 +625,17 @@ top: 57px;
     transform: scale(0.95);
   }
 }
+
 .owl-next {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .owl-prev {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
 .owl-prev span {
   border-radius: 15px !important;
 }
@@ -669,7 +741,7 @@ top: 57px;
 
   & .card__link {
     font-weight: 400;
-    
+
   }
 
   .owl-prev {
@@ -921,13 +993,19 @@ top: 57px;
   max-width: 686px;
 }
 
+.about__slider {
+  width: 100%;
+  max-width: 500px;
+}
+
 #big .item {
   margin: 0 10px;
 }
 
 #big .item img {
   width: 100%;
-  max-height: 550px;
+  max-width: 470px;
+  max-height: 361px;
   height: 100%;
   object-fit: cover;
   border: 1px solid #000;
@@ -1128,7 +1206,7 @@ top: 57px;
   }
 
   &__btn {
-    padding: 20px 76px;
+    padding: 10px 30px;
     height: 68px;
   }
 }
@@ -1527,7 +1605,7 @@ top: 57px;
   }
 
   &__btn {
-    padding: 20px 76px;
+    padding: 10px 30px;
   }
 }
 

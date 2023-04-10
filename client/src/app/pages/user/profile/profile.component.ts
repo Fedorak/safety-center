@@ -21,22 +21,22 @@ export class ProfileComponent {
 			{
 				module: FormModules.INPUT,
 				type: InputTypes.PASSWORD,
-				placeholder: 'Type password',
-				label: 'Current',
+				placeholder: 'Ведіть пароль',
+				label: 'Поточний',
 				input: 'oldPass',
 				focused: true
 			},
 			{
 				module: FormModules.INPUT,
 				type: InputTypes.PASSWORD,
-				placeholder: 'Type password',
-				label: 'New',
+				placeholder: 'Ведіть пароль',
+				label: 'Новий',
 				input: 'newPass'
 			},
 			{
 				module: FormModules.BUTTON,
 				type: ButtonTypes.PRIMARY,
-				label: 'Change'
+				label: 'Змінити'
 			}
 		]
 	}

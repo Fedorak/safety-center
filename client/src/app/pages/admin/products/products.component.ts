@@ -37,7 +37,7 @@ export class ProductsComponent implements OnInit {
 				{   module: FormModules.SELECT,
 					customRef: this.categoryRef,
 					placeholder: 'Категорія',
-					label: 'Category',
+					label: 'Категорія',
 					input: 'category'
 				},
 
@@ -87,7 +87,7 @@ export class ProductsComponent implements OnInit {
 			this.form.components[5].label = 'Create';
 			this._form.modal(this.form, (created: Product) => {
 				console.log(created);
-				
+
 				console.log(this.form.components[4].set);
 
 				this._ps.create(created);

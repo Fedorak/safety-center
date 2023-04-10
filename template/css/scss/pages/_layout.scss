@@ -526,7 +526,6 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
 .G-container-small {
   width: 100%;
   max-width: 1440px;
-  padding: 0 20px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -589,9 +588,8 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
     pointer-events: all;
   }
   .filter-title {
-    font-size: 20px;
+    font-size: 17px;
     border-bottom: 2px solid black;
-    width: max-content;
     display: flex;
     align-items: center;
     padding-bottom: 20px;
@@ -622,7 +620,7 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
       position: relative;
       cursor: pointer;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 28px;
       color: #000000;
       .custon-check {
@@ -660,6 +658,7 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
   
 }
 .catalog-container {
+  width: 100%;
   margin-left: 20px;
 }
 .sort-container {
@@ -734,7 +733,7 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
   flex-flow: row wrap;
   justify-content: space-between;
   .card {
-    width: 24%;
+    width: 25%;
     margin-bottom: 10px;
     height: auto;
     &__link {
