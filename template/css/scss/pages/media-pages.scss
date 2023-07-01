@@ -771,7 +771,7 @@
   &__wrapper {
     display: flex;
     width: 100%;
-    padding: 65px 100px 45px 100px;
+    padding: 65px 0;
     justify-content: space-between;
   }
 }
@@ -1522,8 +1522,6 @@
     &__list {
       padding: 0 50px;
     }
-
-    &__item {}
 
     &__read-more-button {
       margin-right: 50px;

@@ -1,0 +1,14 @@
+.about-wrapper{
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    
+    h1{
+        padding: 10px 0 0 0;
+    }
+    p{
+        padding: 10px 0 0 0;
+    }
+}
