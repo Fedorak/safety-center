@@ -11,9 +11,12 @@
   position: absolute;
   text-align: center;
   top: 70px;
-  background: yellow;
+  background: #6EB700;
   padding: 60px;
   z-index: 99999999;
+  p{
+    color: #fff;
+  }
 }
 
 .header {
